@@ -162,13 +162,14 @@
 
       <hr class="featurette-divider">
       
-      
-  <title>Send us an email</title>
- 
+
+  <title>Simple Send Mail Form</title>
+  </head>
+
   <h1>Send us an email</h1>
-  <form name="form1" method="post" action="SimpleEmail.php">
+
+  <form name="form1" method="post" action="http://www.ut.ee/~alop/SendEmail.php">
   <table>
-      <tr><td><b>To</b></td><td><input type="text" name="mailto" size="35"></td></tr>
       <tr><td><b>Subject</b></td>
           <td><input type="text" name="mailsubject" size="35"></td></tr>
       <tr><td><b>Message</b></td>
@@ -181,28 +182,7 @@
    </table>
  </form>
 
-  <!-- SimpleEmail.php
-  <?php
-    if (empty ($mailto) ) {
-       die ( "Recipient is blank! ") ;
-    }
-
-    if (empty ($mailsubject) ){
-       $mailsubject=" " ;
-    }
-
-    if (empty ($mailbody) ) {
-       $mailbody=" " ; 
-    }
-
-    $result = mail ($mailto, $mailsubject, $mailbody) ;
-
-    if ($result) {
-       echo "Email sent successfully!" ;
-    }else{
-       echo "Email could not be sent." ;
-    }
-?>
+     
 
       <!-- /END THE FEATURETTES -->
 
