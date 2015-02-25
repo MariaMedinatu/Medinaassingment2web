@@ -77,9 +77,7 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img src="http://40.media.tumblr.com/3c6f2304acea257190cd3e0e153cdf33/tumblr_nk8nepXn7C1qfqd3ao1_1280.png" alt="First slide" <iframe width="2000" height="5705">
-           <div class="container">
-            <div class="carousel-caption">
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Perform Test</a></p>   
+                  
             </div>
           </div>
         </div>
@@ -98,19 +96,19 @@
           <img class="img-circle" src="https://lh5.googleusercontent.com/-Pt3vdeGwGT8/AAAAAAAAAAI/AAAAAAAAABY/Zv9gMGA1SFY/photo.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Taste</h2>
           <p> What we eat is not only what we see. The smell and texture of food influences our perception of taste. Keep this in mind in order to get a complete overview of the product</p>
-          <p><a class="btn btn-default" href="#" role="button">Learn more &raquo;</a></p>
+          
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="http://40.media.tumblr.com/f6b8eea06cbfd314b373f410e310ca2c/tumblr_njyhyw3rfk1qfqd3ao1_250.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Color</h2>
           <p>Instead of qualifying the taste with numbers, our product allows you to comprehend the properties of a meal by using colored patterns. </p>
-          <p><a class="btn btn-default" href="#" role="button">Learn more &raquo;</a></p>
+         
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="http://www.biomedcentral.com/sites/images/Allergy_food256px_attrdcastor.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Compounds</h2>
           <p>It is essential to identify and classify food products considering the elements that they are made of and how they influence your perception of its taste. </p>
-          <p><a class="btn btn-default" href="#" role="button">Learn more &raquo;</a></p>
+         
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -157,16 +155,42 @@
       </div>
 
       <hr class="featurette-divider">
+      
+      
+  <title>Simple Send Mail Form</title>
+ 
+  <h1>Mail Form</h1>
+  <form name="form1" method="post" action="SimpleEmail.php">
+  <table>
+      <tr><td><b>To</b></td><td><input type="text" name="mailto" size="35"></td></tr>
+      <tr><td><b>Subject</b></td>
+          <td><input type="text" name="mailsubject" size="35"></td></tr>
+      <tr><td><b>Message</b></td>
+          <td><textarea name="mailbody" cols="50" rows="7"></textarea></td>
+      </tr>
+      <tr><td colspan="2">
+            <input type="submit" name="Submit" value="Send">
+          </td>
+      </tr>
+   </table>
+ </form>
 
       <!-- /END THE FEATURETTES -->
 
-
+          
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#"> Go back to the top</a></p>
         <p>&copy; 2015 Esensorics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+        
+        <span><strong>
+    <a href="http://24timezones.com/world_directory/current_tallinn_time.php" style="text-decoration: none" target="_BLANK" title="clock Tallinn">Time in Tallinn</a> - <span id="tzTimeSpan_ee54eb96271a9e5"></span>
+    <script type="text/javascript" src="http://24timezones.com/js/en/time_12_1_1.js"></script>
+    <script src="http://24timezones.com/timescript/gettime.js.php?city=242&hourtype=12&showdate=1&showseconds=1&id=1908310&elem=ee54eb96271a9e5" language="javascript"></script>
+</strong></span>
 
+      </footer>
+     
     </div><!-- /.container -->
 
 
@@ -181,4 +205,26 @@
   </body>
 </html>
 
+     <!-- SimpleEmail.php
+  <?php
+    if (empty ($mailto) ) {
+       die ( "Recipient is blank! ") ;
+    }
 
+    if (empty ($mailsubject) ){
+       $mailsubject=" " ;
+    }
+
+    if (empty ($mailbody) ) {
+       $mailbody=" " ; 
+    }
+
+    $result = mail ($mailto, $mailsubject, $mailbody) ;
+
+    if ($result) {
+       echo "Email sent successfully!" ;
+    }else{
+       echo "Email could not be sent." ;
+    }
+?>
+-->
